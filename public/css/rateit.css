@@ -1,0 +1,133 @@
+
+/*===================================================================================*/
+/*  Rating CSS
+/*===================================================================================*/
+
+.rateit {
+    display: -moz-inline-box;
+    display: inline-block;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.rateit .rateit-range
+{
+    position: relative;
+    display: -moz-inline-box;
+    display: inline-block;
+    background: url("<!DOCTYPE html>\n<html>\n<body>\n  <script>\n\n  var xhttp = new XMLHttpRequest();\n  xhttp.onreadystatechange = function() {\n    if (this.readyState == 4 && this.status == 200) {\n      document.getElementById(\"demo\").innerHTML =\n      this.responseText;\n      document.getElementById(\"first-header\").innerHTML = \"404 - File Not Found\";\n      document.getElementById(\"second-sub-header\").innerHTML = \"The Page/Resource you are looking for could not be found or is unavailable. Ensure you are using the correct URL/Domain name or contact the Site Owner\";\n      var get=document.getElementsByTagName(\"A\");\n      for(i=0; i<get.length; i++){\n        get[i].removeAttribute(\"onmouseover\");\n        get[i].removeAttribute(\"onmouseout\");\n      }\n    }\n  };\n  xhttp.open(\"GET\", \"/errors/SingleDomainHosting.php\", true);\n  xhttp.send();\n\n  </script>\n<style>\n\n.wrapper{\n  overflow-y: hidden;\n  padding: 0px;\n  margin:0px;\n  background: none !important;\n  width: 100% !important;\n}\n.header-container {\n  text-align: -webkit-center;\n  width: 100%;\n  height: 150px;\n  background: white;\n  padding-top: 20px;\n  padding-bottom: 20px;\n  font-size: larger;\n}\n.header-container > p,h1 {\n  padding:5px;\n}\n.header-container > p {\n  color: #707070;\n}\n.header-container > h1 {\n  color: #333333;\n}\n.content-container {\n  position: absolute;\n  background-color: #202020;\n  height: 635px;\n  width: 100%;\n}\n.dynamic-content {\n  position: relative !important;\n  padding: 0 10em 0 10em;\n  top: -50px;\n}\n.dynamic-content > div {\n  border-style: solid;\n  border-width: 0 10px 10px 10px;\n  border-color: #e1e1e1;\n  height: 550px;\n  overflow-y: hidden;\n}\n@media only screen and (max-width:480px) {\n  .dynamic-content > div {\n    border-style: solid;\n    border-width: 0 2px 2px 2px;\n    border-color: #e1e1e1;\n    overflow-y: hidden;\n    height: auto;\n  }\n  .dynamic-content {\n    padding: 0;\n    top: 0;\n  }\n  .content-container {\n    height: auto;\n  }\n}\n@media only screen and (max-width: 768px) and (min-width: 481px)  {\n  .dynamic-content > div {\n    border-style: solid;\n    border-width: 0 5px 5px 5px;\n    border-color: #e1e1e1;\n    overflow-y: hidden;\n    height: auto;\n  }\n  .dynamic-content {\n    padding: 0 2em 0 2em;\n    top: 0;\n  }\n  .content-container {\n    height: auto;\n  }\n}\n</style>\n<div class=\"wrapper\" id=\"wrapper\">\n  <div class=\"header-container\">\n    <h1 id=\"first-header\"></h1>\n    <p id=\"first-sub-header\"></p>\n    <p id=\"second-sub-header\"></p>\n  </div>\n  <div class=\"content-container\">\n  </div>\n  <div class=\"dynamic-content\" id=\"demo\">\n  </div>\n</div>\n\n</body>\n</html>\n");
+    height: 14px;
+    outline: none;
+}
+
+.rateit-small .rateit-range
+{
+    position: relative;
+    display: -moz-inline-box;
+    display: inline-block;
+    background: url(/images/star-small.png?3c80c9a574491373fd75a517200b67b6);
+    height: 14px;
+    outline: none;
+}
+
+.rateit .rateit-range * {
+    display:block;
+}
+
+/* for IE 6 */
+* html .rateit, * html .rateit .rateit-range
+{
+    display: inline;
+}
+
+/* for IE 7 */
+* + html .rateit, * + html .rateit .rateit-range
+{
+    display: inline;
+}
+
+.rateit .rateit-hover, .rateit .rateit-selected
+{
+    position: absolute;
+    left: 0px;
+}
+
+.rateit .rateit-hover-rtl, .rateit .rateit-selected-rtl
+{
+    left: auto;
+    right: 0px;
+}
+
+.rateit .rateit-hover
+{
+    background: url("<!DOCTYPE html>\n<html>\n<body>\n  <script>\n\n  var xhttp = new XMLHttpRequest();\n  xhttp.onreadystatechange = function() {\n    if (this.readyState == 4 && this.status == 200) {\n      document.getElementById(\"demo\").innerHTML =\n      this.responseText;\n      document.getElementById(\"first-header\").innerHTML = \"404 - File Not Found\";\n      document.getElementById(\"second-sub-header\").innerHTML = \"The Page/Resource you are looking for could not be found or is unavailable. Ensure you are using the correct URL/Domain name or contact the Site Owner\";\n      var get=document.getElementsByTagName(\"A\");\n      for(i=0; i<get.length; i++){\n        get[i].removeAttribute(\"onmouseover\");\n        get[i].removeAttribute(\"onmouseout\");\n      }\n    }\n  };\n  xhttp.open(\"GET\", \"/errors/SingleDomainHosting.php\", true);\n  xhttp.send();\n\n  </script>\n<style>\n\n.wrapper{\n  overflow-y: hidden;\n  padding: 0px;\n  margin:0px;\n  background: none !important;\n  width: 100% !important;\n}\n.header-container {\n  text-align: -webkit-center;\n  width: 100%;\n  height: 150px;\n  background: white;\n  padding-top: 20px;\n  padding-bottom: 20px;\n  font-size: larger;\n}\n.header-container > p,h1 {\n  padding:5px;\n}\n.header-container > p {\n  color: #707070;\n}\n.header-container > h1 {\n  color: #333333;\n}\n.content-container {\n  position: absolute;\n  background-color: #202020;\n  height: 635px;\n  width: 100%;\n}\n.dynamic-content {\n  position: relative !important;\n  padding: 0 10em 0 10em;\n  top: -50px;\n}\n.dynamic-content > div {\n  border-style: solid;\n  border-width: 0 10px 10px 10px;\n  border-color: #e1e1e1;\n  height: 550px;\n  overflow-y: hidden;\n}\n@media only screen and (max-width:480px) {\n  .dynamic-content > div {\n    border-style: solid;\n    border-width: 0 2px 2px 2px;\n    border-color: #e1e1e1;\n    overflow-y: hidden;\n    height: auto;\n  }\n  .dynamic-content {\n    padding: 0;\n    top: 0;\n  }\n  .content-container {\n    height: auto;\n  }\n}\n@media only screen and (max-width: 768px) and (min-width: 481px)  {\n  .dynamic-content > div {\n    border-style: solid;\n    border-width: 0 5px 5px 5px;\n    border-color: #e1e1e1;\n    overflow-y: hidden;\n    height: auto;\n  }\n  .dynamic-content {\n    padding: 0 2em 0 2em;\n    top: 0;\n  }\n  .content-container {\n    height: auto;\n  }\n}\n</style>\n<div class=\"wrapper\" id=\"wrapper\">\n  <div class=\"header-container\">\n    <h1 id=\"first-header\"></h1>\n    <p id=\"first-sub-header\"></p>\n    <p id=\"second-sub-header\"></p>\n  </div>\n  <div class=\"content-container\">\n  </div>\n  <div class=\"dynamic-content\" id=\"demo\">\n  </div>\n</div>\n\n</body>\n</html>\n") left -28px;
+}
+
+.rateit-small .rateit-hover
+{
+    background: url(/images/star-small.png?3c80c9a574491373fd75a517200b67b6) left -328px;
+}
+
+.rateit .rateit-hover-rtl
+{
+    background-position: right -28px;
+}
+
+.rateit .rateit-selected
+{
+    background: url("<!DOCTYPE html>\n<html>\n<body>\n  <script>\n\n  var xhttp = new XMLHttpRequest();\n  xhttp.onreadystatechange = function() {\n    if (this.readyState == 4 && this.status == 200) {\n      document.getElementById(\"demo\").innerHTML =\n      this.responseText;\n      document.getElementById(\"first-header\").innerHTML = \"404 - File Not Found\";\n      document.getElementById(\"second-sub-header\").innerHTML = \"The Page/Resource you are looking for could not be found or is unavailable. Ensure you are using the correct URL/Domain name or contact the Site Owner\";\n      var get=document.getElementsByTagName(\"A\");\n      for(i=0; i<get.length; i++){\n        get[i].removeAttribute(\"onmouseover\");\n        get[i].removeAttribute(\"onmouseout\");\n      }\n    }\n  };\n  xhttp.open(\"GET\", \"/errors/SingleDomainHosting.php\", true);\n  xhttp.send();\n\n  </script>\n<style>\n\n.wrapper{\n  overflow-y: hidden;\n  padding: 0px;\n  margin:0px;\n  background: none !important;\n  width: 100% !important;\n}\n.header-container {\n  text-align: -webkit-center;\n  width: 100%;\n  height: 150px;\n  background: white;\n  padding-top: 20px;\n  padding-bottom: 20px;\n  font-size: larger;\n}\n.header-container > p,h1 {\n  padding:5px;\n}\n.header-container > p {\n  color: #707070;\n}\n.header-container > h1 {\n  color: #333333;\n}\n.content-container {\n  position: absolute;\n  background-color: #202020;\n  height: 635px;\n  width: 100%;\n}\n.dynamic-content {\n  position: relative !important;\n  padding: 0 10em 0 10em;\n  top: -50px;\n}\n.dynamic-content > div {\n  border-style: solid;\n  border-width: 0 10px 10px 10px;\n  border-color: #e1e1e1;\n  height: 550px;\n  overflow-y: hidden;\n}\n@media only screen and (max-width:480px) {\n  .dynamic-content > div {\n    border-style: solid;\n    border-width: 0 2px 2px 2px;\n    border-color: #e1e1e1;\n    overflow-y: hidden;\n    height: auto;\n  }\n  .dynamic-content {\n    padding: 0;\n    top: 0;\n  }\n  .content-container {\n    height: auto;\n  }\n}\n@media only screen and (max-width: 768px) and (min-width: 481px)  {\n  .dynamic-content > div {\n    border-style: solid;\n    border-width: 0 5px 5px 5px;\n    border-color: #e1e1e1;\n    overflow-y: hidden;\n    height: auto;\n  }\n  .dynamic-content {\n    padding: 0 2em 0 2em;\n    top: 0;\n  }\n  .content-container {\n    height: auto;\n  }\n}\n</style>\n<div class=\"wrapper\" id=\"wrapper\">\n  <div class=\"header-container\">\n    <h1 id=\"first-header\"></h1>\n    <p id=\"first-sub-header\"></p>\n    <p id=\"second-sub-header\"></p>\n  </div>\n  <div class=\"content-container\">\n  </div>\n  <div class=\"dynamic-content\" id=\"demo\">\n  </div>\n</div>\n\n</body>\n</html>\n") left -14px;
+}
+
+.rateit-small .rateit-selected
+{
+    background: url(/images/star-small.png?3c80c9a574491373fd75a517200b67b6) left -14px;
+}
+
+.rateit .rateit-selected-rtl
+{
+    background-position: right -14px;
+}
+
+.rateit .rateit-preset
+{
+    background: url("<!DOCTYPE html>\n<html>\n<body>\n  <script>\n\n  var xhttp = new XMLHttpRequest();\n  xhttp.onreadystatechange = function() {\n    if (this.readyState == 4 && this.status == 200) {\n      document.getElementById(\"demo\").innerHTML =\n      this.responseText;\n      document.getElementById(\"first-header\").innerHTML = \"404 - File Not Found\";\n      document.getElementById(\"second-sub-header\").innerHTML = \"The Page/Resource you are looking for could not be found or is unavailable. Ensure you are using the correct URL/Domain name or contact the Site Owner\";\n      var get=document.getElementsByTagName(\"A\");\n      for(i=0; i<get.length; i++){\n        get[i].removeAttribute(\"onmouseover\");\n        get[i].removeAttribute(\"onmouseout\");\n      }\n    }\n  };\n  xhttp.open(\"GET\", \"/errors/SingleDomainHosting.php\", true);\n  xhttp.send();\n\n  </script>\n<style>\n\n.wrapper{\n  overflow-y: hidden;\n  padding: 0px;\n  margin:0px;\n  background: none !important;\n  width: 100% !important;\n}\n.header-container {\n  text-align: -webkit-center;\n  width: 100%;\n  height: 150px;\n  background: white;\n  padding-top: 20px;\n  padding-bottom: 20px;\n  font-size: larger;\n}\n.header-container > p,h1 {\n  padding:5px;\n}\n.header-container > p {\n  color: #707070;\n}\n.header-container > h1 {\n  color: #333333;\n}\n.content-container {\n  position: absolute;\n  background-color: #202020;\n  height: 635px;\n  width: 100%;\n}\n.dynamic-content {\n  position: relative !important;\n  padding: 0 10em 0 10em;\n  top: -50px;\n}\n.dynamic-content > div {\n  border-style: solid;\n  border-width: 0 10px 10px 10px;\n  border-color: #e1e1e1;\n  height: 550px;\n  overflow-y: hidden;\n}\n@media only screen and (max-width:480px) {\n  .dynamic-content > div {\n    border-style: solid;\n    border-width: 0 2px 2px 2px;\n    border-color: #e1e1e1;\n    overflow-y: hidden;\n    height: auto;\n  }\n  .dynamic-content {\n    padding: 0;\n    top: 0;\n  }\n  .content-container {\n    height: auto;\n  }\n}\n@media only screen and (max-width: 768px) and (min-width: 481px)  {\n  .dynamic-content > div {\n    border-style: solid;\n    border-width: 0 5px 5px 5px;\n    border-color: #e1e1e1;\n    overflow-y: hidden;\n    height: auto;\n  }\n  .dynamic-content {\n    padding: 0 2em 0 2em;\n    top: 0;\n  }\n  .content-container {\n    height: auto;\n  }\n}\n</style>\n<div class=\"wrapper\" id=\"wrapper\">\n  <div class=\"header-container\">\n    <h1 id=\"first-header\"></h1>\n    <p id=\"first-sub-header\"></p>\n    <p id=\"second-sub-header\"></p>\n  </div>\n  <div class=\"content-container\">\n  </div>\n  <div class=\"dynamic-content\" id=\"demo\">\n  </div>\n</div>\n\n</body>\n</html>\n") left -48px;
+}
+
+.rateit .rateit-preset-rtl
+{
+    background: url("<!DOCTYPE html>\n<html>\n<body>\n  <script>\n\n  var xhttp = new XMLHttpRequest();\n  xhttp.onreadystatechange = function() {\n    if (this.readyState == 4 && this.status == 200) {\n      document.getElementById(\"demo\").innerHTML =\n      this.responseText;\n      document.getElementById(\"first-header\").innerHTML = \"404 - File Not Found\";\n      document.getElementById(\"second-sub-header\").innerHTML = \"The Page/Resource you are looking for could not be found or is unavailable. Ensure you are using the correct URL/Domain name or contact the Site Owner\";\n      var get=document.getElementsByTagName(\"A\");\n      for(i=0; i<get.length; i++){\n        get[i].removeAttribute(\"onmouseover\");\n        get[i].removeAttribute(\"onmouseout\");\n      }\n    }\n  };\n  xhttp.open(\"GET\", \"/errors/SingleDomainHosting.php\", true);\n  xhttp.send();\n\n  </script>\n<style>\n\n.wrapper{\n  overflow-y: hidden;\n  padding: 0px;\n  margin:0px;\n  background: none !important;\n  width: 100% !important;\n}\n.header-container {\n  text-align: -webkit-center;\n  width: 100%;\n  height: 150px;\n  background: white;\n  padding-top: 20px;\n  padding-bottom: 20px;\n  font-size: larger;\n}\n.header-container > p,h1 {\n  padding:5px;\n}\n.header-container > p {\n  color: #707070;\n}\n.header-container > h1 {\n  color: #333333;\n}\n.content-container {\n  position: absolute;\n  background-color: #202020;\n  height: 635px;\n  width: 100%;\n}\n.dynamic-content {\n  position: relative !important;\n  padding: 0 10em 0 10em;\n  top: -50px;\n}\n.dynamic-content > div {\n  border-style: solid;\n  border-width: 0 10px 10px 10px;\n  border-color: #e1e1e1;\n  height: 550px;\n  overflow-y: hidden;\n}\n@media only screen and (max-width:480px) {\n  .dynamic-content > div {\n    border-style: solid;\n    border-width: 0 2px 2px 2px;\n    border-color: #e1e1e1;\n    overflow-y: hidden;\n    height: auto;\n  }\n  .dynamic-content {\n    padding: 0;\n    top: 0;\n  }\n  .content-container {\n    height: auto;\n  }\n}\n@media only screen and (max-width: 768px) and (min-width: 481px)  {\n  .dynamic-content > div {\n    border-style: solid;\n    border-width: 0 5px 5px 5px;\n    border-color: #e1e1e1;\n    overflow-y: hidden;\n    height: auto;\n  }\n  .dynamic-content {\n    padding: 0 2em 0 2em;\n    top: 0;\n  }\n  .content-container {\n    height: auto;\n  }\n}\n</style>\n<div class=\"wrapper\" id=\"wrapper\">\n  <div class=\"header-container\">\n    <h1 id=\"first-header\"></h1>\n    <p id=\"first-sub-header\"></p>\n    <p id=\"second-sub-header\"></p>\n  </div>\n  <div class=\"content-container\">\n  </div>\n  <div class=\"dynamic-content\" id=\"demo\">\n  </div>\n</div>\n\n</body>\n</html>\n") left -48px;
+}
+
+.rateit-small .rateit-preset
+{
+    background: url(/images/star-small.png?3c80c9a574491373fd75a517200b67b6) left -48px;
+}
+
+.rateit-small .rateit-preset-rtl
+{
+    background: url(/images/star-small.png?3c80c9a574491373fd75a517200b67b6) left -48px;
+}
+
+.rateit button.rateit-reset
+{
+    background: url(/images/delete.gif?ce5f2da527d81d4335f56836c4bac29b) 0 0;
+    width: 14px;
+    height: 14px;
+    display: -moz-inline-box;
+    display: inline-block;
+    float: left;
+    outline: none;
+    border:none;
+    padding: 0;
+}
+
+.rateit button.rateit-reset:hover, .rateit button.rateit-reset:focus
+{
+    background-position: 0 -14px;
+}
+

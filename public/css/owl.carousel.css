@@ -1,0 +1,67 @@
+/* 
+ * 	Core Owl Carousel CSS File
+ *	v1.3.3
+ */
+
+/* clearfix */
+.owl-carousel .owl-wrapper:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+/* display none until init */
+.owl-carousel{
+	display: none;
+	position: relative;
+	width: 100%;
+	-ms-touch-action: pan-y;
+}
+.owl-carousel .owl-wrapper{
+	display: none;
+	position: relative;
+	-webkit-transform: translate3d(0px, 0px, 0px);
+}
+.owl-carousel .owl-wrapper-outer{
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+.owl-carousel .owl-wrapper-outer.autoHeight{
+	transition: height 500ms ease-in-out;
+}
+	
+.owl-carousel .owl-item{
+	float: left;
+}
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div{
+	cursor: pointer;
+}
+.owl-controls {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* mouse grab icon */
+.grabbing { 
+    cursor:url("<!DOCTYPE html>\n<html>\n<body>\n  <script>\n\n  var xhttp = new XMLHttpRequest();\n  xhttp.onreadystatechange = function() {\n    if (this.readyState == 4 && this.status == 200) {\n      document.getElementById(\"demo\").innerHTML =\n      this.responseText;\n      document.getElementById(\"first-header\").innerHTML = \"404 - File Not Found\";\n      document.getElementById(\"second-sub-header\").innerHTML = \"The Page/Resource you are looking for could not be found or is unavailable. Ensure you are using the correct URL/Domain name or contact the Site Owner\";\n      var get=document.getElementsByTagName(\"A\");\n      for(i=0; i<get.length; i++){\n        get[i].removeAttribute(\"onmouseover\");\n        get[i].removeAttribute(\"onmouseout\");\n      }\n    }\n  };\n  xhttp.open(\"GET\", \"/errors/SingleDomainHosting.php\", true);\n  xhttp.send();\n\n  </script>\n<style>\n\n.wrapper{\n  overflow-y: hidden;\n  padding: 0px;\n  margin:0px;\n  background: none !important;\n  width: 100% !important;\n}\n.header-container {\n  text-align: -webkit-center;\n  width: 100%;\n  height: 150px;\n  background: white;\n  padding-top: 20px;\n  padding-bottom: 20px;\n  font-size: larger;\n}\n.header-container > p,h1 {\n  padding:5px;\n}\n.header-container > p {\n  color: #707070;\n}\n.header-container > h1 {\n  color: #333333;\n}\n.content-container {\n  position: absolute;\n  background-color: #202020;\n  height: 635px;\n  width: 100%;\n}\n.dynamic-content {\n  position: relative !important;\n  padding: 0 10em 0 10em;\n  top: -50px;\n}\n.dynamic-content > div {\n  border-style: solid;\n  border-width: 0 10px 10px 10px;\n  border-color: #e1e1e1;\n  height: 550px;\n  overflow-y: hidden;\n}\n@media only screen and (max-width:480px) {\n  .dynamic-content > div {\n    border-style: solid;\n    border-width: 0 2px 2px 2px;\n    border-color: #e1e1e1;\n    overflow-y: hidden;\n    height: auto;\n  }\n  .dynamic-content {\n    padding: 0;\n    top: 0;\n  }\n  .content-container {\n    height: auto;\n  }\n}\n@media only screen and (max-width: 768px) and (min-width: 481px)  {\n  .dynamic-content > div {\n    border-style: solid;\n    border-width: 0 5px 5px 5px;\n    border-color: #e1e1e1;\n    overflow-y: hidden;\n    height: auto;\n  }\n  .dynamic-content {\n    padding: 0 2em 0 2em;\n    top: 0;\n  }\n  .content-container {\n    height: auto;\n  }\n}\n</style>\n<div class=\"wrapper\" id=\"wrapper\">\n  <div class=\"header-container\">\n    <h1 id=\"first-header\"></h1>\n    <p id=\"first-sub-header\"></p>\n    <p id=\"second-sub-header\"></p>\n  </div>\n  <div class=\"content-container\">\n  </div>\n  <div class=\"dynamic-content\" id=\"demo\">\n  </div>\n</div>\n\n</body>\n</html>\n") 8 8, move;
+}
+
+/* fix */
+.owl-carousel  .owl-wrapper,
+.owl-carousel  .owl-item{
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility:    hidden;
+	-ms-backface-visibility:     hidden;
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+}
+
+
