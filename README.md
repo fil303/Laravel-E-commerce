@@ -11,4 +11,13 @@
 
 This is a E-commerce Laravel Project Created for Learning Purpose..
 
+## How To Use
+Admin login ---> Email : admin@gmail.com || Password : 123123123
+User Login ---> Email : user@user.com || Password : 123123123
+
+1. Run Artisan Command -- [ Composer install ].
+2. Export Database SQL File In Your MYSQL.
+3. Edit .env For Database Setup.
+4. Run Artisan Command -- [ php artisan serve ].
+
 
